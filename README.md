@@ -1,0 +1,12 @@
+# safeval
+Quickly get your value from any nested object.
+
+## Installation
+```npm install safeval --save```
+
+## Usage
+```
+var safeval = require('safeval');
+var obj = { test: { one: 1, two: 2, three: 3 } };
+var value = safeval(obj, '.test.two'); // 2
+```
